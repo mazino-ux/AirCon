@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ContactUs</title>
+    <style>
+        body{
+            background-color: #000;
+            color: #fff;
+        }
+        /* .location-container{
+            display: flex;
+            padding-top: 2rem;
+            padding-left: 2rem;
+        }
+        .location-info{
+            line-height: 2;
+        }
+        .location h2{
+            font-size: 2rem;
+            color: chartreuse;
+            padding-top: 1rem;
+        } */
+        .main h2{
+            color: #36aae3;
+        }
+        body.dark-theme {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .contact.body-theme{
+            background-color: #ffffff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Your Page Content -->
+    <div id="content">
+        <div class="color-icon">
+            <div class="icons">
+                <i class="fas fa-palette"></i>
+                <i class="fas fa-sort-down arrow"></i>
+            </div>
+            <div class="color-box">
+                <div class="color-switchers">
+                    <button class="" onclick="changeColor('chartreuse')"></button>
+                    <button class="but blue active" onclick="changeColor('#36aae3')"></button>
+                    <button class="but green" onclick="changeColor('chartreuse')"></button>
+                    <button class="but red" onclick="changeColor('red')" id="red"></button>      
+                    <button class="but purple" onclick="changeColor('purple')"></button>
+                </div>
+            </div>
+        </div>
+        <div id="progress">
+            <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+        </div>
+           <!-- ======================================HEADER====================================== -->
+    <header class="header" id="header">
+        <aside class="sidebar" id="sidebar">
+            <nav class="navigation">
+                <div class="menu-toggle"></div>
+                <div class="profile">
+                    <div class="imgBx">
+                        <img src="logo2preferred.png" alt="" class="image1">
+                    </div>
+                </div>
+    
+                <div class="nav-menu">
+                    <div class="menu">
+                        <ul class="major nav-list">               
+                            <li class="nav-item">
+                                <a href="homepage.html" class="nav__link">
+                                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                                    <span class="text">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav__link">
+                                    <span class="icon"><i class="fa-solid fa-info"></i></span>
+                                    <span class="text">About</span>
+                                </a>            
+                            </li>
+                            <li class="nav-item">
+                                <a href="#location" class="nav__link">
+                                    <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                                    <span class="text">Location</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="brands.html" class="nav__link">
+                                    <span class="icon"><i class="fa-solid fa-server"></i></span>
+                                    <span class="text">Product</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav__link active-link">
+                                    <!-- <span class="icon"><i class="fa-solid fa-map-marker"></i></span> -->
+                                    <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                                    <span class="text">Location</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html" class="nav__link">
+                                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                                    <span class="text">Sign-Up</span>
+                                </a>
+                            </li>
+                        </ul>                      
+                    </div>
+                </div>
+            </nav>
+        </aside>
+    </header>
+    <!-- ======================================HEADER====================================== -->
+
+    <!-- ................................MAIN START................................... -->
+    <main class="main">
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam doloribus sapiente hic ex totam placeat? Mollitia ab aut fuga ad.</p>
+            </div>
+            <div class="contained">
+                <div class="contactInfo">
+                    
+                    <a class="box" href="https://goo.gl/maps/jeYQ5yFRLyZpATAP8" style="color: #fff;" target="_blank">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>121 Ajuwon Road, <br>New-York, Alagbara, <br>220202056</p>
+                        </div>
+                    </a>                  
+
+                    <a class="box" href="https://wa.me/2349077318070?text=Hello,%20I'm%20interested%20in%20your%20services.%20I%20would%20like%20to%20discuss%20my%20project%20requirements%20and%20explore%20how%20we%20can%20work%20together%20to%20bring%20my%20vision%20to%20reality." style="color: #fff;" target="_blank">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone No</h3>
+                            <p>08104694214</p>
+                        </div>
+                    </a>                  
+
+                    <div class="box" onclick="sendEmail()">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>basiriniji@gmail.com</p>
+                        </div>
+                    </div>
+                    <h2 class="txt">Connect With Us</h2>  
+                    <ul class="sci">
+                        <li><a href="https://www.facebook.com/MathenaCoder"><i class="fa-brands fa-facebook"></i></a></li>                
+                        <li><a href="https://twitter.com/TOgwezi75723"><i class="fa-brands fa-twitter"></i></a></li>                
+                        <li><a href="https://www.linkedin.com/in/trinity-ogwezi-407809270/"><i class="fa-brands fa-linkedin"></i></a></li>                
+                        <li><a href="https://www.instagram.com/mathena_elegance_fed"><i class="fa-brands fa-instagram"></i></a></li>  
+                    </ul>              
+                </div>
+                <div class="contactForm">
+                    <form action="https://formsubmit.co/mazinoishioma@gmail.com" method="post">
+                        <h2>Send Message</h2>
+                        
+                        <div class="input-box">
+                            <input type="text" required="required" name="name" >
+                            <span>Full Name</span>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="email" required="required" name="email">
+                            <span>Email</span>
+                        </div>
+
+                        <div class="input-box">
+                            <textarea name="" id="" required="required"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+                        <!-- <input type="hidden" name="_cc" value="another@gmail.com,yetanother@gmail.com"> -->
+
+                        <div class="input-box">
+                            <button type="submit" class="btn" style="background: #00bcd4;"><i class="uil uil-navigator button__icon"></i>Send</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="location" id="location">
+            <div class="location-image">
+                <h3>Need More Information?, Write Us.</h3>
+                <img src="wydt.png" alt="">
+            </div>
+
+            <div class="map">
+                <div class="icon-box">
+                    <a class="icon" href="https://goo.gl/maps/jeYQ5yFRLyZpATAP8"><i class="fa-solid fa-location"></i></a>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7925.499480156421!2d3.359348!3d6.677896!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9440a1b118bb%3A0x66550f4221712b91!2s123%20Akute%20-%20Ajuwon%20Rd%2C%20Iju%20112107%2C%20Agege%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1700366859617!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe>
+         </div>
+        </section>
+        
+    </main>
+    <!-- ................................MAIN END...................................-- -->
+
+     <!-- =================-----------------FOOTER SECTION START--------------------=================== -->
+     <section class="footer scroll-element" id="footer" data-unset="true">
+        <div class="box-container">
+    
+            <div class="box scrolling" data-unset="true">
+                <h3>Cosy AirCons</h3>
+                <img src="logo2preferred.png" class="image">
+            </div>
+    
+            <div class="box scroll-element" data-unset="true">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#dishes">Dishes</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#review">Review</a>
+                <a href="#order">Order</a>
+            </div>
+    
+            <div class="box scrolling" data-unset="true">
+                <h3>Contact Info</h3>
+                <a href="#">+234-810-469-4214</a>
+                <a href="#">234-907-031-8070</a>
+                <a href="mazinoishioma@gmail.com">mazinoishioma@gmail.com</a>
+                <a href="#"> bryantrijan@gmail.com</a>
+                <a href="#">121, New-York</a>
+            </div>
+    
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    
+        <div class="credit">Copyright @ 2024 by <a href="https://wa.me/2348134081278?text=Hello,%20I'm%20interested%20in%20your%20services,%20groupIIBESTDEV" target="_blank"><span>GIIBESTDEV💜</span></a></div>
+    
+        </section>
+        <!-- =================-----------------FOOTER SECTION ENDS---------------------=================== -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function changeColor(color) {
+            var textElements = document.querySelectorAll('h3, h2, #progress-value');
+            var buttonElements = document.querySelectorAll('.btn');
+            document.documentElement.style.setProperty('--blue', color);
+            document.documentElement.style.setProperty('--green', color);
+
+            // Loop through each text element and change its color
+            textElements.forEach(function(element) {
+                element.style.color = color;
+            });
+
+            // Loop through each button element and change its background color
+            buttonElements.forEach(function(button) {
+                button.style.backgroundColor = color;
+            });
+            // hoverElements.forEach(function(hover) {
+            //     hover.style.backgroundColor = color;
+            // });
+        }
+
+
+        const toggler = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.navigation');
+
+        toggler.onclick = function(){
+            nav.classList.toggle("active")
+        }
+
+        function displayGeoLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const { latitude, longitude } = position.coords;
+                        const geocoder = new google.maps.Geocoder();
+
+                        geocoder.geocode(
+                            { location: { lat: latitude, lng: longitude } },
+                            (results, status) => {
+                                if (status === "OK") {
+                                    const address = results[0]?.formatted_address;
+                                    document.getElementById("geolocation-address").innerText = `Address: ${address}`;
+                                } else {
+                                    console.error("Geocoder failed due to: " + status);
+                                }
+                            }
+                        );
+                    },
+                    (error) => {
+                        console.error("Error getting user's location: ", error.message);
+                    }
+                );
+            } else {
+                console.error("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function sendEmail() {
+            let email = 'toluwalaseraji56@gmail.com'
+            var emailAddress = 'basiriniji@gmail.com';
+            var subject = 'Subject of the email'; // You can change this to the desired subject
+            var mailtoUrl = 'mailto:' + email + '?subject=' + encodeURIComponent(subject);
+
+            // Open the default email client
+            window.location.href = mailtoUrl;
+        }
+
+
+        // Call the function when the page loads
+        window.onload = displayGeoLocation;
+        document.addEventListener("DOMContentLoaded", function () {
+    // Simulate delay (You can replace this with actual loading logic)
+    setTimeout(function () {
+        // Hide loader and show content
+        document.getElementById("loader-container").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }, 2000); // Replace 2000 with the desired delay in milliseconds
+});
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function toggleDarkTheme() {
+                $('body').toggleClass('dark-theme');
+            }
+
+            // Event handler for login-light button
+            $('.fa-lightbulb').click(function () {
+                toggleDarkTheme();
+            });
+        });
+    </script>
+
+</body>
+</html>
